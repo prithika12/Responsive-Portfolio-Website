@@ -12,6 +12,8 @@ Responsive Portfolio Website that showcases my interests, projects and skills as
 
 # Screenshots
 
+<img width="1088" alt="project portfolio" src="https://github.com/prithika12/Responsive-Portfolio-Website/assets/78560363/faf3ac73-6838-44e4-8fb9-184b24c53fd2">
 
 
-assets/img/project portfolio.png
+
+
