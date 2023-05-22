@@ -82,6 +82,8 @@ sr.reveal(".skills-data", { interval: 100 });
 /*SCROLL projects*/
 sr.reveal(".project-img", { interval: 200 });
 
+
+
 /*SCROLL CONTACT*/
   // sr.reveal(".contact-input", { interval: 200 });
 
@@ -91,17 +93,30 @@ sr.reveal(".project-img", { interval: 200 });
   }
 
 
-  var messageArr = ["Software Developer", "Frontend Developer", "Backend Developer"];
+  var messageArr = ["a Software Developer", "a Frontend Developer", "a Backend Developer"];
   var textPosition = 0;
   var speed = 200;
-
+  var currentMessageIndex = 0;
+  
   typewriter = () => {
-    // for(let i = 0; i < messageArr.length; i++) {
-    document.querySelector("#jobTitle").innerHTML = messageArr[0].substring(0, textPosition)  ;
-    if(textPosition ++  != messageArr[0].length)
-        setTimeout(typewriter, speed)
-  }
+    var currentMessage = messageArr[currentMessageIndex];
+    var substringStart = currentMessage.indexOf(' ') + 1; // Find the index of the first space and add 1
+    var displayText = "a " + currentMessage.substring(substringStart, textPosition);
+    document.querySelector("#jobTitle").innerHTML = displayText;
+  
+    if (++textPosition <= currentMessage.length) {
+      setTimeout(typewriter, speed);
+    } else {
+      textPosition = 0;
+      currentMessageIndex = (currentMessageIndex + 1) % messageArr.length;
+      setTimeout(typewriter, speed);
+    }
+  };
+  
+  window.addEventListener("load", typewriter);
+  
+  
 
 
-  window.addEventListener("load" , typewriter);
+
 
