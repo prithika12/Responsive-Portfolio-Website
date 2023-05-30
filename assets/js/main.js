@@ -93,7 +93,7 @@ sr.reveal(".project-img", { interval: 200 });
   }
 
 
-  var messageArr = ["a Software Developer", "a Frontend Developer", "a Backend Developer"];
+  var messageArr = ["a Software Developer", "a Frontend Developer", "a Backend Developer", "a UX/UI Designer"];
   var textPosition = 0;
   var speed = 200;
   var currentMessageIndex = 0;
