@@ -474,6 +474,16 @@ img.man-icons {
   margin: 0 var(--mb-2);
 }
 
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home-img {
+    right: 10%;
+  }
+}
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px) {
   body {
@@ -519,16 +529,20 @@ img.man-icons {
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
-    align-self: flex-end;
+    align-self: flex-start;    
+    
+    
   }
   .home-social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
+   
   }
   .home-img {
     width: 39%;
     max-width: 420px;
     bottom: 15%;
+    
   }
   .about-container {
     align-items: center;
@@ -559,15 +573,7 @@ img.man-icons {
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .bd-grid {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .home-img {
-    right: 10%;
-  }
-}
+
 
 
 /* =====SERVICES/SKILLS=====*/
